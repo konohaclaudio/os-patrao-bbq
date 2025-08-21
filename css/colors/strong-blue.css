@@ -1,0 +1,142 @@
+/* --- Paleta de Cores Vermelha ---
+Vermelho Principal: #D90429
+Vermelho Hover: #B40321
+Cinza Escuro: #2B2D42
+Branco: #FFFFFF
+*/
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #D90429;
+}
+.main-menu .navbar-default .navbar-nav .active a{
+	color: #D90429;
+}
+.main-menu nav li a::after {
+    background: #D90429;
+}
+.typer{
+	color: #D90429 !important;
+}
+.banner-text h2{
+	color: #D90429
+}
+.book-btn a{
+	background: #D90429;
+	border: 3px solid #D90429;
+}
+.book-btn a:hover{
+	border: 3px solid #B40321;
+}
+.hvr-underline-from-center::before{
+	background:#B40321;
+}
+.block-title{
+	color: #D90429;
+}
+.item-type-zoom .item-hover:hover::before{
+	background: rgba(217, 4, 41, 0.5);
+}
+.special-box .owl-theme .owl-controls .owl-page.active span{
+	background: #D90429;
+}
+.offer-item div h3{
+	color: #D90429;
+}
+.tab-menu .is-active{
+	background: #D90429;
+}
+.tab-menu .slick-arrow.slick-prev{
+	background: #D90429 url(../../images/back.png) no-repeat center;
+	background-position: 2px 4px;
+}
+.tab-menu .slick-arrow.slick-next{
+	background: #D90429 url(../../images/next.png) no-repeat center;
+	background-position: 7px 4px;
+}
+
+.offer-item .offer-price{
+	border: 1px solid #D90429;
+}
+.sf-team:hover .text-col{
+	background-color: #D90429;
+}
+.gal-item a::after{
+	background-color: rgba(217, 4, 41, 0.75);
+}
+.overlay i:hover{
+	border: 1px solid #D90429;
+	color: #D90429;
+}
+.blog-btn-v a{
+	background: #D90429;
+	border: 3px solid #D90429;
+}
+.book-srv a{
+	background: #D90429;
+	border: 3px solid #D90429;
+}
+
+.panel-pricing .panel-heading{
+	background: #D90429;
+}
+.panel-pricing{
+	border: 1px solid #D90429;
+}
+.panel-body p strong span{
+	color: #D90429;
+}
+.pricing-main .panel-footer a{
+	background: #D90429;
+	border: 3px solid #D90429;
+}
+.pricing-main .panel-footer a:hover{
+	border: 3px solid #B40321;
+}
+
+.reserve-book-btn button{
+	background: #D90429;
+	border: 3px solid #D90429;
+}
+.reserve-book-btn button:hover a{
+	color:#000000;
+}
+.footer-news form a{
+	background: #D90429;
+}
+.footer-news form a:hover{
+	border: 2px dotted #D90429;
+}
+.footer-box-a h3{
+	color: #D90429;
+}
+.footer-box-b h3{
+	color: #D90429;
+}
+.footer-box-c h3{
+	color: #D90429;
+}
+.footer-box-d h3{
+	color: #D90429;
+}
+.footer-box-c p a:hover{
+	color: #D90429;
+}
+.footer-box-b ul li a:hover{
+	color: #D90429;
+}
+
+.footer-box .socials-box a:hover .social-circle-border{
+	color: #D90429;
+}
+
+.footer-box-c p i{
+	color: #D90429;
+}
+
+.copyright-main{
+	background: #D90429;
+}
+
+#color-panel a.panel-button:hover{
+	color: #D90429;		
+}

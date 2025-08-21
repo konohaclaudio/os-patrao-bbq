@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<!-- O idioma do documento foi mantido como Português do Brasil -->
+<html lang="pt-BR">
+
+<head>
+    <!-- =================================================================
+    INÍCIO DO CABEÇALHO (HEAD)
+    Esta seção contém metadados, links para folhas de estilo (CSS) e scripts.
+    Não é visível para o usuário, mas é crucial para o navegador.
+    ================================================================== -->
+
+    <!-- Metadados básicos -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Metatag para responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Metadados do site (SEO) - Importante para os motores de busca como o Google -->
+    <title>OS PATRÃO BBQ – Churrasco Profissional & Eventos</title>
+    <meta name="keywords" content="churrasco, bbq, defumados, parrilla, fogo de chão, brisket, eventos, Piraju-SP">
+    <meta name="description" content="OS PATRÃO BBQ eleva a arte do churrasco a outro nível. Especialistas em Defumados, Parrilla e Fogo de Chão para eventos inesquecíveis em Piraju-SP.">
+    <meta name="author" content="Claudio Santana">
+
+    <!-- Ícones do site (Favicon) -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+        <!-- Ícones do site (Favicon) -->
+    <!-- Ícone para dispositivos Apple -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Folhas de Estilo (CSS) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- O novo design está agora neste arquivo -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/strong-blue.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- Adicionado para o ícone do WhatsApp -->
+
+    <!-- JavaScript Modernizer - Detecta funcionalidades do navegador -->
+    <script src="js/modernizer.js"></script>
+    
+    <!-- Novas fontes do Google para um visual rústico e impactante -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Script de compatibilidade para navegadores antigos (Internet Explorer) -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Estilos para o botão flutuante do WhatsApp -->
+    <style>
+
+      
+           .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
+            z-index: 1;
+        }
+        .banner .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Botões com estilo industrial */
+        .table-btn {
+            background: transparent;
+            border: 3px solid var(--primary-color);
+            color: var(--primary-color) !important;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            padding: 12px 45px !important;
+            border-radius: 2px; /* Cantos mais retos */
+            transition: all 0.3s ease;
+            box-shadow: none;
+        }
+        .table-btn:hover {
+            background: var(--primary-color);
+            color: var(--dark-bg) !important;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Títulos de seção com decoração lateral */
+        .block-title {
+            position: relative;
+            padding: 0 25px;
+            margin-bottom: 50px;
+        }
+        .block-title::before, .block-title::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 4px;
+            background-color: var(--primary-color);
+        }
+        .block-title::before { left: -40px; }
+        .block-title::after { right: -40px; }
+        .text-center .block-title::before { left: calc(50% - 100px); }
+        .text-center .block-title::after { right: calc(50% - 100px); }
+
+        /* Cards com design robusto */
+        .sf-team, .panel-pricing, .offer-item {
+            background-color: var(--card-bg);
+            border-radius: 4px;
+            overflow: hidden;
+            border: none;
+            border-bottom: 5px solid var(--primary-color);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+        }
+        .sf-team:hover, .panel-pricing:hover {
+            transform: scale(1.03);
+        }
+        .sf-team .text-col {
+            padding: 30px;
+        }
+
+        /* Menu de navegação mais integrado */
+        .main-menu .navbar-default {
+            background-color: rgba(24, 21, 17, 0.5);
+            backdrop-filter: blur(5px);
+        }
+        #site-header.is-sticky .main-menu .navbar-default {
+            background-color: rgba(24, 21, 17, 0.9);
+        }
+        .navbar-default .navbar-nav > li > a {
+            transition: color 0.3s ease;
+        }
+        .navbar-default .navbar-nav > .active > a, 
+        .navbar-default .navbar-nav > .active > a:focus, 
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > li > a:focus, 
+        .navbar-default .navbar-nav > li > a:hover {
+            color: var(--primary-color);
+            background-color: transparent;
+        }
+        .main-menu nav li a::after, .main-menu nav li a::before {
+            background: var(--primary-color); /* Cor do sublinhado do menu */
+        }
+
+         /* Melhorias no Formulário e Botão WhatsApp */
+        .form-reservations-box {
+            width: 100%;
+            max-width: 800px; /* Aumenta a largura máxima para melhor layout */
+            margin: 0 auto;
+        }
+        .reservations-box .form-box {
+            margin-bottom: 20px;
+        }
+   /* Estilo para o botão de WhatsApp */
+        .btn-whatsapp {
+            background: #25D366; /* Cor do WhatsApp */
+            color: #fff;
+            border: 3px solid #25D366;
+            padding: 15px 30px;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: all 0.3s ease-in-out;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn-whatsapp:hover {
+            background: transparent;
+            color: #25D366;
+            border: 3px solid #25D366;
+        }
+
+        /* Ajuste para o formulário para melhor balanceamento */
+        .reservations-box .row {
+            margin-bottom: 15px; /* Adiciona espaçamento entre as linhas do formulário */
+        }
+        .form-box input, .form-box select, .form-box textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .form-reservations-box .text-center {
+            text-align: center;
+        }
+    
+
+        
+    </style>
+
+</head> <!-- FIM DO CABEÇALHO (HEAD) -->
+
+<body>
+    <!-- =================================================================
+    INÍCIO DO CORPO (BODY)
+    Todo o conteúdo visível do site fica dentro desta tag.
+    ================================================================== -->
+
+    <!-- INÍCIO DO LOADER DE CARREGAMENTO -->
+    <!-- Animação que aparece enquanto a página carrega -->
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+    <!-- FIM DO LOADER DE CARREGAMENTO -->
+
+    <!-- INÍCIO DO CABEÇALHO DO SITE -->
+
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Alternar navegação</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <!-- Logo da empresa -->
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+<img src="images/navbar.png" alt="Logo OS PATRÃO BBQ" width="40" height="40" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Itens do menu de navegação -->
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Início</a></li>
+                                    <li><a href="#about">Sobre Nós</a></li>
+                                    <li><a href="#menu">Cardápio</a></li>
+                                    <li><a href="#special-menu">Especialidades</a></li>
+                                    <li><a href="#our_team">Os Patrões</a></li>
+                                    <li><a href="#gallery">Galeria</a></li>
+                                    <li><a href="#pricing">Eventos</a></li>
+                                    <li><a href="#reservation">Orçamentos</a></li>
+                                    <li><a href="#footer">Contato</a></li>
+                                </ul>
+                            </div><!-- Fim dos itens do menu -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- FIM DO CABEÇALHO DO SITE -->
+
+    <!-- INÍCIO DA SEÇÃO BANNER -->
+    <!-- Principal área visual de boas-vindas -->
+    <div id="banner" class="banner full-screen-mode parallax">
+        <div class="container pr">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banner-static">
+                    <div class="banner-text">
+                        <div class="banner-cell">
+                            <!-- Título com efeito de digitação (controlado via JavaScript) -->
+                                                         <h2>O melhor churrasco</span></h2>
+
+<img src="images/logo.png" alt="Logo OS PATRÃO BBQ" width="110" height="110" />
+                          <!---  <h1>A arte do fogo para <br> <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="Eventos:Confraternizações:Celebrações" data-colors="#B22222"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1> -->
+                            <h2>O CHURRASCO EM OUTRO NÍVEL.</h2>
+                            <p>Excelência em Defumados, Parrilla e Fogo de Chão que transformam seu evento em uma experiência memorável.</p>
+                            <!-- Botão de chamada para ação -->
+                            <div class="book-btn">
+                                <a href="#pricing" class="table-btn hvr-underline-from-center">Leve para seu Evento</a>
+                            </div>
+                            <!-- Ícone de mouse animado para indicar rolagem -->
+                            <a href="#about">
+                                <div class="mouse"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- FIM DA SEÇÃO BANNER -->
+
+    <!-- INÍCIO DA SEÇÃO "A MARCA" (SOBRE NÓS) -->
+    <div id="about" class="about-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <!-- Coluna de texto -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title"> SOBRE NÓS </h2>
+                        <h3>TUDO COMEÇOU, SIMPLESMENTE, ASSIM....</h3>
+                        <p>Transforme seu evento em uma experiência gastronômica inesquecível com o Os Patrão BBQ. Especializados em carnes defumadas de qualidade, oferecemos serviços personalizados para casamentos, festas corporativas e confraternizações.</p>
+                        <p>Acompanhamos desde a primeira reunião para entender seu evento e personalizar o cardápio. Após aprovação do orçamento, cuidamos de todos os detalhes: talheres, pratos, garçons e organização.</p>
+                        <p>Você só precisa aproveitar cada momento ao redor de uma mesa cheia das melhores carnes defumadas.</p>
+                    </div>
+                </div>
+                <!-- Coluna de imagens -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <div class="about-images">
+                            <img class="about-main" src="images/about-main.jpg" alt="Preparo de churrasco OS PATRÃO BBQ">
+                            <img class="about-inset" src="images/about-inset.jpg" alt="Detalhe de carne defumada">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DA SEÇÃO "A MARCA" -->
+
+    <!-- INÍCIO DA SEÇÃO DE ESPECIALIDADES -->
+    <!-- Carrossel com os pratos de destaque -->
+    <div id="special-menu" class="special-menu pad-top-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title color-white text-center"> Nossas Especialidades </h2>
+                        <h5 class="title-caption text-center">Cortes e técnicas que definem a nossa assinatura. O sabor que nos torna únicos.</h5>
+                    </div>
+                    <!-- Carrossel (plugin Owl Carousel) -->
+                    <div class="special-box">
+                        <div id="owl-demo">
+                            <div class="item item-type-zoom">
+                                <a href="#menu" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            BRISKET DEFUMADO
+                                            <div class="line"></div>
+                                            <div class="dit-line">Peito bovino defumado lentamente em lenha frutífera até atingir o ápice da maciez e do sabor.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/special-menu-1.jpg" alt="Brisket Defumado">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#menu" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            COSTELA FOGO DE CHÃO
+                                            <div class="line"></div>
+                                            <div class="dit-line">A tradição em sua forma mais pura. Costela assada por horas, resultando em uma carne suculenta que se desmancha.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/special-menu-2.jpg" alt="Costela Fogo de Chão">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#menu" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                            CORTES NA PARRILLA
+                                            <div class="line"></div>
+                                            <div class="dit-line">A precisão do fogo forte para selar o sabor de cortes nobres como Ancho e Chorizo, garantindo a suculência perfeita.</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/special-menu-3.jpg" alt="Cortes na Parrilla">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DA SEÇÃO DE ESPECIALIDADES -->
+
+    <!-- INÍCIO DA SEÇÃO CARDÁPIO -->
+    <!-- Menu com abas para navegar entre as categorias -->
+    <div id="menu" class="menu-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center"> Nosso Cardápio </h2>
+                        <p class="title-caption text-center">Uma seleção de pratos criados para surpreender. Explore nossos sabores.</p>
+                    </div>
+                    <!-- Sistema de abas (plugin Slick Carousel) -->
+                    <div class="tab-menu">
+                        <!-- Navegação das abas -->
+                        <div class="slider slider-nav">
+                            <div class="tab-title-menu">
+                                <h2>PORÇÕES DEFUMADAS</h2>
+                                <p> <i class="fa fa-fire"></i> </p>
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>LANCHES ESPECIAIS</h2>
+                                <p> <i class="fa fa-fire"></i> </p>
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>PETISCOS E PORÇÕES</h2>
+                                <p> <i class="fa fa-fire"></i> </p>
+                            </div>
+                            <div class="tab-title-menu">
+                                <h2>ACOMPANHAMENTOS</h2>
+                                <p> <i class="fa fa-fire"></i> </p>
+                            </div>
+                        </div>
+                        <!-- Conteúdo das abas -->
+                        <div class="slider slider-single">
+                            <!-- Aba 1: Porções Defumadas -->
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-01.jpg" alt="Coxa e Sobrecoxa Defumada" class="img-responsive">
+                                        <div>
+                                            <h3>COXA E SOBRECOXA DEFUMADA</h3>
+                                            <p>Defumada em lenha de laranjeira com blend de ervas, garantindo suculência e sabor únicos. Acompanha chimichurri artesanal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-02.jpg" alt="Costelinha BBQ" class="img-responsive">
+                                        <div>
+                                            <h3>COSTELINHA BBQ</h3>
+                                            <p>Costelinha suína envolta em molho barbecue especial, servida com salada coleslaw crocante.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-03.jpg" alt="Costela Defumada com Batatas" class="img-responsive">
+                                        <div>
+                                            <h3>COSTELA DEFUMADA COM BATATAS</h3>
+                                            <p>Costela bovina defumada por 12 horas, acompanhada de batatas rústicas e farofa da casa.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-04.jpg" alt="Brisket com Linguiça Defumada" class="img-responsive">
+                                        <div>
+                                            <h3>BRISKET COM LINGUIÇA DEFUMADA</h3>
+                                            <p>Peito bovino e linguiça defumados em lenhas frutíferas, servidos com batata ao murro e farofa especial.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Aba 2: Lanches Especiais -->
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-05.jpg" alt="Lanche de Pulled Pork" class="img-responsive">
+                                        <div>
+                                            <h3>LANCHE DE PULLED PORK</h3>
+                                            <p>Carne de porco desfiada e defumada, servida em pão selado na manteiga com salada coleslaw.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-06.jpg" alt="Lanche Pulled Pork Brioche" class="img-responsive">
+                                        <div>
+                                            <h3>PULLED PORK BRIOCHE</h3>
+                                            <p>Pão de brioche recheado com copa lombo defumada ao molho barbecue, acompanhado de coleslaw crocante.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-06.jpg" alt="Lanche Pulled Pork Brioche" class="img-responsive">
+                                        <div>
+                                            <h3>PULLED PORK BRIOCHE</h3>
+                                            <p>Pão de brioche recheado com copa lombo defumada ao molho barbecue, acompanhado de coleslaw crocante.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-06.jpg" alt="Lanche Pulled Pork Brioche" class="img-responsive">
+                                        <div>
+                                            <h3>PULLED PORK BRIOCHE</h3>
+                                            <p>Pão de brioche recheado com copa lombo defumada ao molho barbecue, acompanhado de coleslaw crocante.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-06.jpg" alt="Lanche Pulled Pork Brioche" class="img-responsive">
+                                        <div>
+                                            <h3>PULLED PORK BRIOCHE</h3>
+                                            <p>Pão de brioche recheado com copa lombo defumada ao molho barbecue, acompanhado de coleslaw crocante.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-06.jpg" alt="Lanche Pulled Pork Brioche" class="img-responsive">
+                                        <div>
+                                            <h3>PULLED PORK BRIOCHE</h3>
+                                            <p>Pão de brioche recheado com copa lombo defumada ao molho barbecue, acompanhado de coleslaw crocante.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Aba 3: Petiscos e Porções -->
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-07.jpg" alt="Bolinho de Pulled Pork" class="img-responsive">
+                                        <div>
+                                            <h3>BOLINHO DE PULLED PORK</h3>
+                                            <p>Bolinho recheado com copa lombo desfiada, finalizado com molho barbecue e catupiry.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-08.jpg" alt="Buffalo Wings" class="img-responsive">
+                                        <div>
+                                            <h3>BUFFALO WINGS</h3>
+                                            <p>Tulipas de frango defumadas em lenhas frutíferas, acompanhadas de molho barbecue.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-09.jpg" alt="Torresmo de Rolo Defumado" class="img-responsive">
+                                        <div>
+                                            <h3>TORRESMO DE ROLO DEFUMADO</h3>
+                                            <p>Tiras de panceta enrolada e defumada, servidas com molho sweet chilli.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-10.jpg" alt="Pork Belly Burnt Ends" class="img-responsive">
+                                        <div>
+                                            <h3>PORK BELLY BURNT ENDS</h3>
+                                            <p>Dadinho de barriga suína defumada e caramelizada no molho barbecue com mel.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Aba 4: Acompanhamentos -->
+                            <div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-11.jpg" alt="Polenta com Queijo" class="img-responsive">
+                                        <div>
+                                            <h3>POLENTA COM QUEIJO</h3>
+                                            <p>Polenta cremosa recheada com queijo, acompanhada de ragu de costela defumada.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                    <div class="offer-item">
+                                        <img src="images/menu-item-thumbnail-12.jpg" alt="Polenta Recheada + Costela Defumada" class="img-responsive">
+                                        <div>
+                                            <h3>POLENTA RECHEADA + COSTELA DEFUMADA</h3>
+                                            <p>Polenta recheada com queijo, servida com costela bovina defumada por 10 horas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim do sistema de abas -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DA SEÇÃO CARDÁPIO -->
+
+    <!-- INÍCIO DA SEÇÃO "OS PATRÕES" (EQUIPE) -->
+    <div id="our_team" class="team-main pad-top-100 pad-bottom-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center"> Conheça os Patrões </h2>
+                        <p class="title-caption text-center">Os pitmasters responsáveis por trazer a verdadeira experiência do churrasco defumado para Piraju.</p>
+                    </div>
+                    <div class="team-box">
+                        <div class="row">
+                            <!-- Membro 1 -->
+                            <div class="col-md-4 col-sm-6 col-md-offset-2">
+                                <div class="sf-team">
+                                    <div class="thumb">
+                                        <a href="#"><img src="images/staff-01.jpg" alt="Foto do Pitmaster Lucas Bruno"></a>
+                                    </div>
+                                    <div class="text-col">
+                                        <h3>Lucas Bruno</h3>
+                                        <p>Com paixão, técnica e dedicação, Lucas garante que cada prato seja uma celebração de sabor e tradição.</p>
+                                        <ul class="team-social">
+                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Membro 2 -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="sf-team">
+                                    <div class="thumb">
+                                        <a href="#"><img src="images/staff-02.jpg" alt="Foto do Pitmaster Nilson BBQ"></a>
+                                    </div>
+                                    <div class="text-col">
+                                        <h3>Nilson BBQ</h3>
+                                        <p>Nilson é um dos responsáveis por trazer a verdadeira experiência do churrasco defumado para Piraju, com maestria e dedicação.</p>
+                                        <ul class="team-social">
+                                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DA SEÇÃO "OS PATRÕES" -->
+
+    <!-- INÍCIO DA SEÇÃO GALERIA -->
+    <div id="gallery" class="gallery-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center"> Nossa Galeria </h2>
+                        <p class="title-caption text-center">Imagens que capturam a essência do nosso trabalho. A arte do fogo em cada detalhe.</p>
+                    </div>
+                    <div class="gal-container clearfix">
+                        <!-- Item 1 da galeria -->
+                        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#1">
+                                    <img src="images/gallery_01.jpg" alt="Evento com Fogo de Chão" />
+                                </a>
+                                <!-- Modal (popup da imagem) -->
+                                <div class="modal fade" id="1" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_01.jpg" alt="Evento com Fogo de Chão" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>Estrutura completa para eventos com Fogo de Chão.</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 2 da galeria -->
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#2">
+                                    <img src="images/gallery_02.jpg" alt="Brisket suculento" />
+                                </a>
+                                <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_02.jpg" alt="Brisket suculento" />
+                                            </div>
+                                            <div class="col-md-12 description">
+                                                <h4>O ponto perfeito do nosso Brisket defumado.</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DA SEÇÃO GALERIA -->
+    
+    <!-- INÍCIO DA SEÇÃO DE EVENTOS (PREÇOS) -->
+    <div id="pricing" class="pricing-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="block-title text-center"> Formatos de Eventos </h2>
+                    <p>Levamos a experiência OS PATRÃO BBQ até você. Conheça nossos formatos e solicite um orçamento personalizado.</p>
+                </div>
+                <div class="panel-pricing-in">
+                    <!-- Pacote 1 -->
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <div class="panel panel-pricing">
+                            <div class="panel-heading">
+                                <div class="pric-icon">
+                                    <img src="images/store.png" alt="Ícone Parrilla" />
+                                </div>
+                                <h3>Parrilla Experience</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p><strong><span>R$</span>Pessoa.</strong></p>
+                            </div>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><i class="fa fa-check"></i> Confraternizações</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Eventos corporativos</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Cortes nobres na brasa</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Acompanhamentos clássicos</li>
+                            </ul>
+                            <div class="panel-footer">
+                                <a class="btn btn-lg btn-block hvr-underline-from-center" href="#reservation">Solicitar Orçamento</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pacote 2 -->
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <div class="panel panel-pricing">
+                            <div class="panel-heading">
+                                <div class="pric-icon">
+                                    <img src="images/food.png" alt="Ícone Defumados" />
+                                </div>
+                                <h3>Festival de Defumados</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p><strong><span>Ideal para</span></strong></p>
+                            </div>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><i class="fa fa-check"></i> Festas e aniversários</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Experiência American BBQ</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Brisket, Pulled Pork e mais</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Cardápio completo</li>
+                            </ul>
+                            <div class="panel-footer">
+                                <a class="btn btn-lg btn-block hvr-underline-from-center" href="#reservation">Solicitar Orçamento</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pacote 3 -->
+                    <div class="col-md-4 col-sm-4 text-center">
+                        <div class="panel panel-pricing">
+                            <div class="panel-heading">
+                                <div class="pric-icon">
+                                    <img src="images/coffee.png" alt="Ícone Fogo de Chão" />
+                                </div>
+                                <h3>Fogo de Chão</h3>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p><strong><span>R$</span>Pessoa.</strong></p>
+                            </div>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><i class="fa fa-check"></i> Grandes celebrações</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Casamentos e datas especiais</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Tradição e impacto visual</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i> Cortes inteiros assados lentamente</li>
+                            </ul>
+                            <div class="panel-footer">
+                                <a class="btn btn-lg btn-block hvr-underline-from-center" href="#reservation">Solicitar Orçamento</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DA SEÇÃO DE EVENTOS -->
+
+    <!-- INÍCIO DA SEÇÃO DE ORÇAMENTOS (RESERVAS) -->
+
+                    <!-- Formulário de contato -->
+            <div id="reservation" class="reservations-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="form-reservations-box">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="block-title text-center"> Orçamento para Eventos </h2>
+                        </div>
+                        <h4 class="form-title text-center">PREENCHA OS CAMPOS ABAIXO OU FALE COM A GENTE NO WHATSAPP</h4>
+                        <p class="text-center">Nossa equipe entrará em contato para criar o cardápio ideal para o seu evento.</p>
+                    <p class="text-center">PREENCHA OS CAMPOS ABAIXO E NOSSA EQUIPE ENTRARÁ EM CONTATO.</p>
+
+                        <div class="row" style="margin-top: 20px; margin-bottom: 20px; display: flex; justify-content: center; align-items: center;">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center">
+                                <!-- Botão que direciona para o WhatsApp de Lucas Bruno -->
+                                <a href="https://wa.me/5514997130640" target="_blank" class="btn btn-whatsapp hvr-underline-from-center">
+                                    <i class="fa fa-whatsapp"></i> FALE NO WHATSAPP
+                                </a>
+                            </div>
+                        </div>
+
+                        <form id="contact-form" method="post" class="reservations-box" name="contactform" action="mail.php">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-box">
+                                        <input type="text" name="form_name" id="form_name" placeholder="Nome*" required="required" data-error="O nome é obrigatório.">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-box">
+                                        <input type="email" name="email" id="email" placeholder="E-mail*" required="required" data-error="O e-mail é obrigatório.">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-box">
+                                        <input type="text" name="phone" id="phone" placeholder="Telefone/WhatsApp*" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-box">
+                                        <input type="text" name="event_date" id="date-picker" placeholder="Data do evento*" required="required" data-error="A data é obrigatória." />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-box">
+                                        <select name="no_of_persons" id="no_of_persons" class="selectpicker">
+                                            <option selected disabled>Nº de convidados</option>
+                                            <option>Até 30</option>
+                                            <option>31-50</option>
+                                            <option>51-100</option>
+                                            <option>100+</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="form-box">
+                                        <select name="occasion" id="occasion" class="selectpicker">
+                                            <option selected disabled>Tipo de evento</option>
+                                            <option>Aniversário</option>
+                                            <option>Corporativo</option>
+                                            <option>Confraternização</option>
+                                            <option>Casamento</option>
+                                            <option>Outro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-box">
+                                        <textarea name="comments" id="comments" cols="30" rows="4" placeholder="Fale um pouco sobre o local, o número exato de convidados e suas expectativas para o cardápio."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="reserve-book-btn text-center">
+                                        <button class="hvr-underline-from-center" type="submit" value="SEND" id="submit">ENVIAR SOLICITAÇÃO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                            
+                  
+
+                            
+                        </div>
+                        
+                    </form> <!-- Fim do formulário -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DA SEÇÃO DE ORÇAMENTOS -->
+
+    <!-- INÍCIO DO RODAPÉ -->
+    <div id="footer" class="footer-main">
+        <!-- Seção de Newsletter/Chamada no rodapé -->
+        <div class="footer-news pad-top-100 pad-bottom-70 parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="ft-title color-white text-center"> Fique por dentro </h2>
+                            <p> Siga-nos nas redes sociais e acompanhe nosso trabalho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Conteúdo principal do rodapé com informações -->
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="footer-logo">
+                            <div class="text-center">
+<img src="images/logo.png" alt="Logo OS PATRÃO BBQ" width="100" height="100" />
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>Sobre a Marca</h3>
+                                <p>A arte do churrasco levada a sério. Especialistas em Defumados, Parrilla e Fogo de Chão para eventos.</p>
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li><a href="https://www.facebook.com/129232133611959"><div class="social-circle-border"><i class="fa fa-facebook"></i></div></a></li>
+                                    <li><a href="https://www.instagram.com/ospatraobbq/"><div class="social-circle-border"><i class="fa fa-instagram"></i></div></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-b">
+                                <h3>Serviços</h3>
+                                <ul>
+                                    <li><a href="#pricing">Eventos Corporativos</a></li>
+                                    <li><a href="#pricing">Festas Particulares</a></li>
+                                    <li><a href="#pricing">Confraternizações</a></li>
+                                    <li><a href="#pricing">Celebrações Especiais</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contato</h3>
+                                <p><i class="fa fa-map-signs" aria-hidden="true"></i><span>Piraju - SP</span></p>
+                                <p><i class="fa fa-mobile" aria-hidden="true"></i><span>(XX) XXXXX-XXXX</span></p>
+                                <p><i class="fa fa-envelope" aria-hidden="true"></i><span><a href="mailto:contato@ospatraobbq.com.br">contato@ospatraobbq.com.br</a></span></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                            <div class="footer-box-d">
+                                <h3>Atendimento</h3>
+                                <ul>
+                                    <li><p>Eventos sob consulta</p><span>Atendemos em toda a região.</span></li>
+                                    <li><p>Solicite seu orçamento</p><span>Disponibilidade via formulário.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Seção de Direitos Autorais -->
+            <div id="copyright" class="copyright-main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2025 OS PATRÃO BBQ 🔥 - Todos os direitos reservados.  - Desenvolvido por Konoha Tech</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM DO RODAPÉ -->
+
+    <!-- Botão "Voltar ao Topo" -->
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+
+
+    <!-- Painel de Seleção de Cores (Componente de Demonstração) -->
+    <section id="color-panel" class="close-color-panel">
+        <a class="panel-button gray2"><i class="fa fa-cog fa-spin fa-2x"></i></a>
+        <div class="segment">
+            <h4 class="gray2 normal no-padding">Esquema de Cores</h4>
+            <a title="gold" class="switcher orange-bg"></a>
+            <a title="red" class="switcher strong-blue-bg"></a>
+            <a title="moderate-green" class="switcher moderate-green-bg"></a>
+            <a title="vivid-yellow" class="switcher vivid-yellow-bg"></a>
+        </div>
+    </section>
+
+    <!-- =================================================================
+    INÍCIO DOS SCRIPTS JAVASCRIPT
+    Carregados no final para otimizar o carregamento da página.
+    ================================================================== -->
+       <!-- Combinação de vários plugins (jQuery, etc.) -->
+    <script src="js/all.js"></script>
+        <!-- JavaScript do Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+      <!-- Scripts customizados do tema (ativação de plugins, etc.) -->
+    <script src="js/custom.js"></script>
+
+</body> <!-- FIM DO CORPO (BODY) -->
+
+</html>

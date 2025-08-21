@@ -1,0 +1,142 @@
+/* --- Paleta de Cores "Os Patrão BBQ" ---
+Dourado Principal: #C4A66B
+Dourado Hover: #D4B67B
+Grafite Escuro: #212121
+Branco: #FFFFFF
+*/
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #C4A66B;
+}
+.main-menu .navbar-default .navbar-nav .active a{
+	color: #C4A66B;
+}
+.main-menu nav li a::after {
+    background: #C4A66B;
+}
+.typer{
+	color: #C4A66B !important;
+}
+.banner-text h2{
+	color: #C4A66B
+}
+.book-btn a{
+	background: #C4A66B;
+	border: 3px solid #C4A66B;
+}
+.book-btn a:hover{
+	border: 3px solid #D4B67B;
+}
+.hvr-underline-from-center::before{
+	background:#D4B67B;
+}
+.block-title{
+	color: #C4A66B;
+}
+.item-type-zoom .item-hover:hover::before{
+	background: rgba(196, 166, 107, 0.5);
+}
+.special-box .owl-theme .owl-controls .owl-page.active span{
+	background: #C4A66B;
+}
+.offer-item div h3{
+	color: #C4A66B;
+}
+.tab-menu .is-active{
+	background: #C4A66B;
+}
+.tab-menu .slick-arrow.slick-prev{
+	background: #C4A66B url(../../images/back.png) no-repeat center;
+	background-position: 2px 4px;
+}
+.tab-menu .slick-arrow.slick-next{
+	background: #C4A66B url(../../images/next.png) no-repeat center;
+	background-position: 7px 4px;
+}
+
+.offer-item .offer-price{
+	border: 1px solid #C4A66B;
+}
+.sf-team:hover .text-col{
+	background-color: #C4A66B;
+}
+.gal-item a::after{
+	background-color: rgba(196, 166, 107, 0.75);
+}
+.overlay i:hover{
+	border: 1px solid #C4A66B;
+	color: #C4A66B;
+}
+.blog-btn-v a{
+	background: #C4A66B;
+	border: 3px solid #C4A66B;
+}
+.book-srv a{
+	background: #C4A66B;
+	border: 3px solid #C4A66B;
+}
+
+.panel-pricing .panel-heading{
+	background: #C4A66B;
+}
+.panel-pricing{
+	border: 1px solid #C4A66B;
+}
+.panel-body p strong span{
+	color: #C4A66B;
+}
+.pricing-main .panel-footer a{
+	background: #C4A66B;
+	border: 3px solid #C4A66B;
+}
+.pricing-main .panel-footer a:hover{
+	border: 3px solid #D4B67B;
+}
+
+.reserve-book-btn button{
+	background: #C4A66B;
+	border: 3px solid #C4A66B;
+}
+.reserve-book-btn button:hover a{
+	color:#000000;
+}
+.footer-news form a{
+	background: #C4A66B;
+}
+.footer-news form a:hover{
+	border: 2px dotted #C4A66B;
+}
+.footer-box-a h3{
+	color: #C4A66B;
+}
+.footer-box-b h3{
+	color: #C4A66B;
+}
+.footer-box-c h3{
+	color: #C4A66B;
+}
+.footer-box-d h3{
+	color: #C4A66B;
+}
+.footer-box-c p a:hover{
+	color: #C4A66B;
+}
+.footer-box-b ul li a:hover{
+	color: #C4A66B;
+}
+
+.footer-box .socials-box a:hover .social-circle-border{
+	color: #C4A66B;
+}
+
+.footer-box-c p i{
+	color: #C4A66B;
+}
+
+.copyright-main{
+	background: #212121;
+}
+
+#color-panel a.panel-button:hover{
+	color: #C4A66B;		
+}
