@@ -50,4 +50,3 @@ Desenvolvimento e Adaptação: O projeto foi adaptado para a marca OS PATRÃO BB
 
 Revisão e Validação: Claudio Santana Konoha Tech
 
-Template Original: Este projeto foi baseado em um template web, adaptado para atender às necessidades da marca.
